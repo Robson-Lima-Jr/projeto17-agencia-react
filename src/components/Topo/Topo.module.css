@@ -1,18 +1,48 @@
-.topo_area {
+.topo_darkMode, .topo_lightMode {
     width: 100%;
     min-height: 10vh;
     display: flex;
     align-items: center;
 }
 
+.topo_darkMode {
+    background-color: var(--darkTopoRodape);
+}
+
+.topo_lightMode {
+    background-color: white;
+}
+
 .container_base {
     width: 100%;
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+/* Botão */
+
+.btn_config {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.topo_darkMode .btn_config {
+    background-color: var(--darkTopoRodape);
+    border-color: white;
 }
 
 .logo_img{
     width: 50px;
     height: 35px;
+}
+
+.icone {
+    width: 25px;
+    height: 25px;
 }
