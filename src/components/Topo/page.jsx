@@ -3,9 +3,9 @@ import styles from "./Topo.module.css"
 import Image from "next/image";
 
 // import Imagens
-import Logo from "../../../public/logo.png";
-import LightIcone from "../../../public/sun.png";
-import DarkIcone from "../../../public/moon.png";
+import Logo from "/public/logo.png";
+import LightIcone from "/public/sun.png";
+import DarkIcone from "/public/moon.png";
 
 
 export default function Topo(props) {
