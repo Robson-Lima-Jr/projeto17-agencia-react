@@ -21,7 +21,8 @@
     color: var(--corTituloAzul);
 }
 
-.banner_descricao h2, .banner_descricao span {
+.banner_descricao h2,
+.banner_descricao span {
     font-size: 35px;
 }
 
