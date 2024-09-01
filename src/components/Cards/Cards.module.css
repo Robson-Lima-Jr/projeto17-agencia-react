@@ -1,12 +1,44 @@
-.cards_area {
+.cards_lightMode,
+.cards_darkMode {
     flex: 0 0 300px;
+    min-height: 280px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 20px;
     border: 1px solid var(--lightLinhaRodape);
 }
 
-.cards_area p {
-    padding-top: 10px;
+
+.cards_darkMode h4 {
+    color: white;
+}
+
+.cards_lightMode h4 {
+    color: black;
+}
+
+.cards_lightMode p,
+.cards_darkMode p {
+    font-size: 17px;
+    line-height: 28px;
+}
+
+
+.cards_titulos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cards_titulos h4 {
+    font-size: 23px;
+}
+
+.cards_titulos span {
+    font-size: 16px;
+}
+
+.cards_titulos small {
+    font-size: 16px;
 }
