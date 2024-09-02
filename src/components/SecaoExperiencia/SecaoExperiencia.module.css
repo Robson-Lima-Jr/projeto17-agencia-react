@@ -28,7 +28,21 @@
 }
 
 .exp_descricao h3 {
+    position: relative;
+    padding-bottom: 20px;
     font-size: 30px;
+}
+
+.exp_descricao h3::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 70px;
+    height: 6px;
+    background-color: var(--corDourada);
 }
 
 .exp_descricao p {

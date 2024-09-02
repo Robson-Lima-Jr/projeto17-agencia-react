@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import Topo from "@/components/Topo/page";
 import Banner from "@/components/Banner/page";
 import SecaoExperiencia from "@/components/SecaoExperiencia/page";
+import Rodape from "@/components/Rodape/page";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -19,6 +20,8 @@ export default function Home() {
       <Banner />
 
       <SecaoExperiencia darkMode={isDarkMode}/>
+
+      <Rodape darkMode={isDarkMode}/>
     </main>
   );
 }

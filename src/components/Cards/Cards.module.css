@@ -9,9 +9,19 @@
     border: 1px solid var(--lightLinhaRodape);
 }
 
+.cards_darkMode:hover,
+.cards_lightMode:hover {
+    background-color: var(--corDourada);
+    color: black;
+}
+
 
 .cards_darkMode h4 {
     color: white;
+}
+
+.cards_darkMode:hover h4 {
+    color: black;
 }
 
 .cards_lightMode h4 {
