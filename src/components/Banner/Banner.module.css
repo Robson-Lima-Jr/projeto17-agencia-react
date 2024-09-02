@@ -37,3 +37,18 @@
 .banner_descricao p {
     font-size: 12px;
 }
+
+/* Media Query */
+@media screen and (max-width: 768px){
+    .banner_area {
+        height: 70vh;
+    }
+
+    .banner_image{
+        display: none;
+    }
+
+    .banner_descricao {
+        width: 100%;
+    }
+}
