@@ -1,0 +1,61 @@
+.exp_darkMode, .exp_lightMode {
+    width: 100%;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.exp_darkMode {
+    background-color: var(--darkFundoExperiencia);
+    color: var(--darkFonteCor);
+}
+
+.exp_lightMode {
+    background-color: var(--lightFundoExperiencia);
+    color: var(--lightTitulo);
+}
+
+.exp_descricao {
+    max-width: 768px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    text-align: center;
+}
+
+.exp_descricao h3 {
+    position: relative;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.exp_descricao h3::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 70px;
+    height: 6px;
+    background-color: var(--corDourada);
+}
+
+.exp_descricao p {
+    font-size: 18px;
+}
+
+/* Cards */
+.container_cards {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

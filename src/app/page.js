@@ -1,9 +1,27 @@
+"use client";
+import { useState } from "react";
 import styles from "./page.module.css";
+import Topo from "@/components/Topo/page";
+import Banner from "@/components/Banner/page";
+import SecaoExperiencia from "@/components/SecaoExperiencia/page";
+import Rodape from "@/components/Rodape/page";
 
 export default function Home() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  function mudarFundo() {
+    setIsDarkMode(!isDarkMode);
+  }
+
   return (
-    <main >
-      
+    <main>
+      <Topo mudarTema={mudarFundo} darkMode={isDarkMode}/>
+
+      <Banner />
+
+      <SecaoExperiencia darkMode={isDarkMode}/>
+
+      <Rodape darkMode={isDarkMode}/>
     </main>
   );
 }

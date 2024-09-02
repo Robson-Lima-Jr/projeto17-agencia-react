@@ -1,0 +1,63 @@
+.cards_lightMode,
+.cards_darkMode {
+    flex: 1 1 300px;
+    min-height: 280px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid var(--lightLinhaRodape);
+}
+
+.cards_darkMode:hover,
+.cards_lightMode:hover {
+    background-color: var(--corDourada);
+    color: black;
+}
+
+
+.cards_darkMode h4 {
+    color: white;
+}
+
+.cards_darkMode:hover h4 {
+    color: black;
+}
+
+.cards_lightMode h4 {
+    color: black;
+}
+
+.cards_lightMode p,
+.cards_darkMode p {
+    font-size: 17px;
+    line-height: 28px;
+}
+
+
+.cards_titulos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cards_titulos h4 {
+    font-size: 23px;
+}
+
+.cards_titulos span {
+    font-size: 16px;
+}
+
+.cards_titulos small {
+    font-size: 16px;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+    .cards_lightMode,
+    .cards_darkMode {
+        flex: 0 0 100%;
+    }
+}
