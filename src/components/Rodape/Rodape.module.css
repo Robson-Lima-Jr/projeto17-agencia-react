@@ -1,6 +1,7 @@
-.rodapeDarkMode, .rodapeLightMode {
+.rodapeDarkMode,
+.rodapeLightMode {
     width: 100%;
-    padding: 100px 20px 20px;
+    padding: 100px 0px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,13 +9,21 @@
     gap: 40px;
 }
 
-.rodapeDarkMode{
+.rodapeDarkMode {
     background-color: var(--darkTopoRodape);
     color: var(--darkFonteCor);
 }
 
 .rodapeLightMode {
     color: var(--darkFundoExperiencia);
+}
+
+.rodapeDarkMode .creditos {
+    border-top: 2px solid var(--darkLinhaRodape);
+}
+
+.rodapeLightMode .creditos {
+    border-top: 2px solid var(--lightLinhaRodape);
 }
 
 .img_logo {
@@ -25,6 +34,7 @@
 .rodape_descricao {
     width: 100%;
     max-width: 600px;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,6 +59,9 @@
 }
 
 .creditos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     padding-top: 40px;
 }
 

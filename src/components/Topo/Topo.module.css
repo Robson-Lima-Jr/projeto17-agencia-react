@@ -1,9 +1,16 @@
 .topo_darkMode,
 .topo_lightMode {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
     width: 100%;
-    min-height: 10vh;
+    height: 12vh;
     display: flex;
     align-items: center;
+
+    border-bottom: 2px solid var(--corDourada);
 }
 
 .topo_darkMode {
@@ -29,13 +36,12 @@
     display: flex;
     align-items: center;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid var(--corDourada);
     cursor: pointer;
 }
 
 .topo_darkMode .btn_config {
     background-color: var(--darkTopoRodape);
-    border-color: white;
 }
 
 .topo_lightMode .btn_config {
